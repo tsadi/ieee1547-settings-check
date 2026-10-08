@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ieee1547-settings-check"
+version = "0.1.0"
+description = "Validate inverter trip and volt-var settings against IEEE 1547-2018 categories and CA Rule 21 defaults"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Tsadi Shvo"}]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+ieee1547-check = "ieee1547_check.cli:main"
+
+[tool.setuptools]
+packages = ["ieee1547_check"]

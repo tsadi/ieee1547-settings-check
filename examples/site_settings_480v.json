@@ -1,0 +1,17 @@
+{
+  "name": "480 V BESS inverter, as-commissioned settings",
+  "category": "III",
+  "profile": "rule21",
+  "nominal_voltage_v": 480,
+  "trip": {
+    "OV2": {"pickup": 1.20, "time": 0.16},
+    "OV1": {"pickup": 1.10, "time": 13.0},
+    "UV1": {"pickup_v": 422.4, "time": 21.0},
+    "UV2": {"pickup": 0.50, "time": 3.0},
+    "OF2": {"pickup": 62.0, "time": 0.16},
+    "OF1": {"pickup": 61.2, "time": 300},
+    "UF1": {"pickup": 58.5, "time": 300},
+    "UF2": {"pickup": 56.5, "time": 0.16}
+  },
+  "volt_var": [[92, 30], [97, 0], [103, 0], [107, -30]]
+}
